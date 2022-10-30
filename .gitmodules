@@ -1,0 +1,3 @@
+[submodule "glslCanvas"]
+	path = glslCanvas
+	url = https://github.com/ulno/glslCanvas
