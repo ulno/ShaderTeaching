@@ -1,8 +1,8 @@
 # ShaderTeaching
 Some glue code for supporting teaching of shaders
 
-So far this complements some projects with https://thebookofshaders.com
-It allows quick local editign of shaders as there are currently some troubles with running http://editor.thebookofshaders.com/.
+So far, this complements some projects with https://thebookofshaders.com
+It allows quick local editing of shaders as there are currently some troubles with running http://editor.thebookofshaders.com/.
 
 Clone this repository with (don't forget the ``--recursive`` for teh submodule):
 ```
@@ -10,7 +10,7 @@ git clone --recursive https://github.com/ulno/ShaderTeaching
 ```
 
 And then run a webserver in the cloned directory.
-If you have python installed, just do:
+If you have Python installed, just do:
 ```
 python3 -m http.server
 ```
