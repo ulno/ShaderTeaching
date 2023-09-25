@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://1nkco3v4c6ub"]
+
+[ext_resource type="Texture2D" uid="uid://cwjn2vuf6rh8w" path="res://icon.svg" id="1_adfxn"]
+
+[sub_resource type="Shader" id="Shader_7g0pc"]
+code = "shader_type canvas_item;
+
+void fragment() {
+	vec4 color = texture(TEXTURE,UV);
+	color = mix(color, vec4(sin(TIME)/2.0+0.5,UV.x,UV.y,1.0), 0.5);
+	COLOR = color;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nqkbc"]
+shader = SubResource("Shader_7g0pc")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_nqkbc")
+position = Vector2(64, 67)
+texture = ExtResource("1_adfxn")
